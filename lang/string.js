@@ -1,10 +1,11 @@
-define(function(require, exports) {
-	'use strict';
+'use strict';
 
-	function repeat(text, count) {
-		return Array(count + 1).join(text);
-	}
+var fn = require('core/functional');
 
-	exports.repeat = repeat;
 
-});
+function repeat(text, count) {
+	return Array(count + 1).join(text);
+}
+
+
+exports.repeat = fn.curry(repeat);

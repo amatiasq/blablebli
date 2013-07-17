@@ -1,6 +1,3 @@
-define(function(require, exports) {
-	'use strict';
+'use strict';
 
-	exports.toArray = Function.prototype.call.bind(Array.prototype.slice);
-
-});
+exports.toArray = Function.prototype.call.bind(Array.prototype.slice);
